@@ -20,10 +20,7 @@ tdm = TermDocumentMatrix(
     removeNumbers = TRUE, tolower = TRUE)
 )
 
-tdm
-
 m = as.matrix(tdm)
-m
 # get word counts in decreasing order
 word_freqs = sort(rowSums(m), decreasing = TRUE) 
 # create a data frame with words and their frequencies
