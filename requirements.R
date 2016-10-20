@@ -1,0 +1,5 @@
+install.packages("tm")
+install.packages("wordcloud")
+install.packages("twitteR")
+install.packages("RColorBrewer")
+install.packages("SnowballC")

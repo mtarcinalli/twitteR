@@ -1,0 +1,5 @@
+library("twitteR")
+source("keys.R")
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+tweets=searchTwitter('finding nemo', lang='en', n=100, retryOnRateLimit=1)
+saveRDS(tweets,'tweets.rds')
