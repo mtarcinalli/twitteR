@@ -2,9 +2,12 @@ library(tm)
 library(RColorBrewer)
 library(wordcloud)
 library(twitteR)
-source("coleta.R")
+
+# arquivo configuração
+source("conf.R")
+
 # carregando tweets
-tweets = readRDS('tweets.rds')
+tweets = readRDS(arquivo)
 # convertendo twitterR list para data frame
 tweets.df = twListToDF(tweets)
 # retirar caracteres estranhos
@@ -27,4 +30,3 @@ word_freqs = sort(rowSums(m), decreasing = TRUE)
 dm = data.frame(word = names(word_freqs), freq = word_freqs)
 #dm$word
 wordcloud(dm$word, dm$freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
-
