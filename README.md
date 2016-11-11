@@ -17,3 +17,5 @@ Sentiment Analysis:
 https://www.r-bloggers.com/sentiment-analysis-with-machine-learning-in-r/
 
 http://rpubs.com/chengjun/tweets_sentiment_analysis
+
+http://juliasilge.com/blog/Joy-to-the-World/
